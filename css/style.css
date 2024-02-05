@@ -1,0 +1,129 @@
+/* start global  */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+    --name-stats-size: 18px;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    grid-template-rows: 1fr auto;
+    min-height: 100dvh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+    background-image: url("../images/bg-pattern-top.svg"),
+        url("../images/bg-pattern-bottom.svg");
+    background-position: top -600px left -200px, bottom -600px right -200px;
+    background-repeat: no-repeat, no-repeat;
+}
+
+
+@media(max-width:600px) {
+    body {
+        background-position: left 120% top 200%, right 120% bottom 200%;
+    }
+}
+
+/* end global  */
+/* start main */
+.victor {
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.victor .bg-img img {
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.victor .prof-img {
+    position: relative;
+    bottom: 3rem;
+    margin-bottom: -3rem;
+}
+
+.victor .prof-img img {
+    border-radius: 1in;
+    border: 5px solid white;
+
+}
+
+.victor .prof-text {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.victor .prof-text h1 {
+    font-size: var(--name-stats-size);
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.victor .prof-text h1 span {
+    color: var(--Dark-grayish-blue);
+    margin-left: .4rem;
+    font-weight: 400;
+}
+
+.victor .prof-text p {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+
+}
+
+.victor hr {
+    opacity: .3;
+}
+
+.victor .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1.5rem;
+}
+
+.victor .stats .card h2 {
+    font-size: var(--name-stats-size);
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+.victor .stats .card p {
+    font-size: .7rem;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: .1rem;
+}
+
+footer {
+    margin-top: -4rem;
+    color: var(--Very-dark-desaturated-blue);
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+}
+@media(max-width: 600px) {
+    footer a {
+        font-size: 1rem;
+    }
+}
+
+
+/* end main */
